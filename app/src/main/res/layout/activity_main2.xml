@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuarios"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imglogadmin"
+        android:layout_width="259dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        app:srcCompat="@drawable/ic_undraw_unlock__24_mb"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="-5dp" />
+
+    <EditText
+        android:id="@+id/Edidtextecorroadmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imglogadmin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="15"
+        android:foregroundTint="#FFFFFF"
+        android:hint="Example.example.com"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/white"
+        tools:ignore="MissingConstraints"></EditText>
+
+    <EditText
+        android:id="@+id/contra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Edidtextecorroadmin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="15"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#F3EFEF"
+        android:textColorHint="#F1EBEB"
+        tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:id="@+id/accesofinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contra"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:backgroundTint="#FFAC63"
+        android:onClick="onClick"
+        android:text="Acceder"
+        android:textColor="#FFFFFF"
+        tools:ignore="MissingConstraints,OnClick" />
+
+    <Button
+        android:id="@+id/registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/accesofinal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FFAC63"
+        android:onClick="onClick"
+        android:text="registro"
+        android:textColor="#FFFFFF"
+        tools:ignore="MissingConstraints,OnClick" />
+
+
+</RelativeLayout>

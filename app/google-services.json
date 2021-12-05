@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "92136465442",
+    "project_id": "delyverapp-334214",
+    "storage_bucket": "delyverapp-334214.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:92136465442:android:ef160b4412bce8aabb967b",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "92136465442-jsr72o9bvbtd19gliae5h9jv2980ipj2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myapplication",
+            "certificate_hash": "7cc4cd6862df5ae40ebc914b9b7778b9ecc12542"
+          }
+        },
+        {
+          "client_id": "92136465442-39t4pqchh5ceo32im4uj07ob1eu3t4fa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjkrJLfrYNlsIUqeajcSHPYwiLPbWHSd0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "92136465442-39t4pqchh5ceo32im4uj07ob1eu3t4fa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

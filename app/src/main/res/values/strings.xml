@@ -1,3 +1,42 @@
 <resources>
-    <string name="app_name">My Application</string>
+
+    //Vista de bienvenida
+
+    <string name="app_name">DelyverApp</string>
+    <string name="valor_bienvenida">Welcome</string>
+    <string name="btton_empezar">EMPEZAR</string>
+
+    //Vista de LogIn
+
+    <string name="label_email">Example.example.com</string>
+    <string name="label_psswd">Password</string>
+    <string name="btton_acceder">Acceder</string>
+    <string name="bttn_registro">registro</string>
+
+
+    //Vista de Registro
+
+    <string name="label_nombre">Nombre</string>
+    <string name="label_apellido">Apellido</string>
+    <string name="label_correo">Correo</string>
+    <string name="label_contrase_a">Contraseña</string>
+    <string name="label_confirmacion_contrase_a">Confirmacion contraseña</string>
+    <string name="label_registrase">Registrarse</string>
+
+    //Strings menu
+    <string name="label_datos_de_perfil">Datos de perfil</string>
+    <string name="label_centro_de_ayuda">Centro de ayuda</string>
+    <string name="label_historial_de_pedidos">Historial de pedidos</string>
+    <string name="label_metodos_de_pago">Métodos de pago</string>
+    <string name="nombre_de_ejemplo">Nombre de ejemplo</string>
+
+    <string name="informaci_n">Información</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="pizzas_deliciosas">Pizzas_deliciosas</string>
+    <string name="el_mejor_amogo_del_hombre_con_un_olor_a_carne_3">el_mejor_amogo_del_hombre_con_un_olor_a_carne_3</string>
+    <string name="se_le_dara_favorito_al_perrito">se le dara favorito al perrito</string>
+    <string name="carne">Carne</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="10dp"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:cardCornerRadius="15dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/card_imagen"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentTop="true"
+                android:maxHeight="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_access_time_24"
+                android:layout_marginLeft="8dp">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/card_dtitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card_imagen"
+                android:text="@string/pizzas_deliciosas"
+                android:textStyle="bold"
+                android:layout_marginLeft="8dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/descripcion_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card_dtitulo"
+                android:text="@string/carne"
+                android:layout_marginLeft="8dp">
+
+
+            </TextView>
+
+            <Button
+                android:id="@+id/infobuttton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/descripcion_menu"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="8dp"
+                android:text="@string/informaci_n">
+
+            </Button>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/infobuttton"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/atencion_al_cliente"
+                app:tint="@color/purple_500"
+                android:contentDescription="@string/se_le_dara_favorito_al_perrito"
+                android:layout_marginRight="8dp"
+                android:backgroundTint="@color/white">
+            </ImageButton>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

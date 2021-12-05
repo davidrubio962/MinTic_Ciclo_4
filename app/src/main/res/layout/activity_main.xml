@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -10,7 +11,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Deliverapp!"
+            android:text="@string/valor_bienvenida"
             app:layout_constraintBottom_toBottomOf="parent"
             android:textColor="@color/white"
             android:textSize="25dp"
@@ -20,11 +21,6 @@
             android:layout_marginTop="200dp"
             tools:layout_editor_absoluteX="71dp"
             tools:layout_editor_absoluteY="-5dp"/>
-
-
-
-
-
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -38,14 +34,15 @@
     </ImageView>
 
     <Button
+        android:id="@+id/empezar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/imajen"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="65dp"
         android:backgroundTint="#FFAC63"
-        android:text="EMPEZAR"
-        android:textColor="@color/black"
-        android:layout_centerHorizontal="true">
+        android:text="@string/btton_empezar"
+        android:textColor="@color/black">
 
     </Button>
 

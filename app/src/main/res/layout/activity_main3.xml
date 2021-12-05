@@ -40,7 +40,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"
         android:backgroundTint="#FBFBFB"
-        android:hint="nombre"
+        android:hint="@string/label_nombre"
         android:textColor="@color/white"
         android:textColorHint="@color/white" />
 
@@ -55,7 +55,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"
         android:backgroundTint="#FFFFFF"
-        android:hint="apellido"
+        android:hint="@string/label_apellido"
         android:inputType="text"
         android:textColor="@color/white"
         android:textColorHint="@color/white" />
@@ -71,7 +71,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"
         android:backgroundTint="#FFFFFF"
-        android:hint="correo"
+        android:hint="@string/label_correo"
         android:inputType="text"
         android:textColor="@color/white"
         android:textColorHint="@color/white" />
@@ -87,7 +87,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"
         android:backgroundTint="#FFFFFF"
-        android:hint="contraseña"
+        android:hint="@string/label_contrase_a"
         android:inputType="textPassword"
         android:textColor="@color/white"
         android:textColorHint="@color/white" />
@@ -102,7 +102,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"
         android:backgroundTint="#FFFFFF"
-        android:hint="confirmacion contraseña"
+        android:hint="@string/label_confirmacion_contrase_a"
         android:inputType="textPassword"
         android:textColor="@color/white"
         android:textColorHint="@color/white" />
@@ -110,7 +110,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Registrase"
+        android:text="@string/label_registrase"
         android:layout_below="@id/txt5"
         android:backgroundTint="#FF6363"
         android:layout_centerHorizontal="true"

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:title="Settings">
+
+        <menu>
+
+            <item android:id="@+id/profile_data"
+                android:title="@string/label_datos_de_perfil"
+                android:icon="@drawable/ic_baseline_person_24"/>
+
+            <item android:id="@+id/help_center"
+                android:title="@string/label_centro_de_ayuda"
+                android:icon="@drawable/atencion_al_cliente"/>
+
+            <item android:id="@+id/orders_history"
+                android:title="@string/label_historial_de_pedidos"
+                android:icon="@drawable/historial_de_pedidos"/>
+
+            <item android:id="@+id/payment_methods"
+                android:title="@string/label_metodos_de_pago"
+                android:icon="@drawable/metodos_de_pago"/>
+
+        </menu>
+    </item>
+</menu>

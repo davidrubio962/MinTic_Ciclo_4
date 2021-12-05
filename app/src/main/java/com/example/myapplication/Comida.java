@@ -5,9 +5,9 @@ public class Comida {
     private String comida, descripcion;
     private int imgComida;
 
-    public Comida(String comida, String restaurante, int imgComida) {
+    public Comida(String comida, String descripcion, int imgComida) {
         this.comida = comida;
-        this.descripcion = restaurante;
+        this.descripcion = descripcion;
         this.imgComida = imgComida;
     }
 

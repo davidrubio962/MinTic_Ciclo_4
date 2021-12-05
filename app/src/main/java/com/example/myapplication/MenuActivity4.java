@@ -6,18 +6,30 @@ import androidx.navigation.NavController;
 import androidx.navigation.NavHostController;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.NavigationUI;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.google.android.material.bottomappbar.BottomAppBar;
 import com.google.android.material.navigation.NavigationView;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class MenuActivity4 extends AppCompatActivity {
@@ -54,9 +66,54 @@ public class MenuActivity4 extends AppCompatActivity {
         });
 
         recyclerView = (RecyclerView) findViewById(R.id.recyclerComida);
-        //recyclerViewAdaptor
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        recyclerViewAdaptor = new RecyclerViewAdaptor(obtenerComida());
+        recyclerView.setAdapter(recyclerViewAdaptor);
+
 
     }
+
+    public Connection conexionBD(){
+        Connection conexion = null;
+        try{
+            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+            StrictMode.setThreadPolicy(policy);
+            Class.forName("net.sourceforge.jtds.jdbc.Driver").newInstance();
+            conexion = DriverManager.getConnection(
+                    "jdbc:jtds:sqlserver://192.168.56.1;databaseName=AndroidStudio;user=sa;password=123;");
+
+        }catch (Exception e){
+            Toast.makeText(getApplicationContext(),e.getMessage(),Toast.LENGTH_SHORT).show();
+        }
+        return conexion;
+    }
+    public List<Comida> obtenerComidaBD(){
+        List<Comida> comida = new ArrayList<>();
+        try {
+            Statement st = conexionBD().createStatement();
+            ResultSet rs = st.executeQuery("select * from tipo_de_comida");
+            while(rs.next()){
+                comida.add(new Comida(
+                        rs.getString("nombre"),
+                        rs.getString("descripcion"),
+                        R.drawable.atencion_al_cliente));
+            }
+        }catch(SQLException e){
+            Toast.makeText(getApplicationContext(),e.getMessage(),Toast.LENGTH_SHORT).show();
+        }
+        return comida;
+    }
+
+
+    public List<Comida> obtenerComida(){
+        List<Comida> comida = new ArrayList<>();
+        comida.add(new Comida("Pizza", "Pizza Hunt",R.drawable.atencion_al_cliente));
+        comida.add(new Comida("Hamburguesa", "El corral",R.drawable.atencion_al_cliente));
+        return comida;
+    }
+
+
 
     private void setup() {
 

@@ -13,18 +13,19 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class RecyclerViewAdaptor extends RecyclerView.Adapter<RecyclerViewAdaptor.ViewHolder> {
     public static class ViewHolder extends RecyclerView.ViewHolder{
+
         private TextView comida, descripcion;
         ImageView fotoComida;
 
-        public ViewHolder(View itemView){
+        public ViewHolder(View itemView) {
             super(itemView);
             comida = (TextView) itemView.findViewById(R.id.tvComida);
             descripcion = (TextView) itemView.findViewById(R.id.tvDescripcion);
-
-            fotoComida = (ImageView) itemView.findViewById(R.id.imgComida);
+            fotoComida = (ImageView) itemView.findViewById(R.id.imageButton);
         }
-    }
 
+
+    }
     public List<Comida> comidaList;
 
     public RecyclerViewAdaptor(List<Comida> comidaList) {

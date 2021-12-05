@@ -69,27 +69,21 @@
         android:layout_marginTop="5dp"/>
 
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:background="@color/white"
-        app:cardCornerRadius="15dp"
+    <RelativeLayout
         app:layout_constraintTop_toBottomOf="@id/btnlocal"
-        tools:ignore="MissingConstraints">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerComida"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerComida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="-11dp"
+        tools:layout_editor_absoluteY="127dp" />
+    </RelativeLayout>
 
-        </RelativeLayout>
-    </androidx.cardview.widget.CardView>
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.navigation.NavigationView
 
@@ -101,8 +95,5 @@
         app:headerLayout="@layout/card_header_drawer"
 
         />
-
-
-
 
 </androidx.drawerlayout.widget.DrawerLayout>

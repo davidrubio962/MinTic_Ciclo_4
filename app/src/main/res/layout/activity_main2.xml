@@ -27,8 +27,8 @@
         tools:layout_editor_absoluteX="71dp"
         tools:layout_editor_absoluteY="-5dp" />
 
-    <EditText
-        android:id="@+id/Edidtextecorroadmin"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/pedro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/imglogadmin"
@@ -40,13 +40,23 @@
         android:hint="@string/label_email"
         android:inputType="textEmailAddress"
         android:textColorHint="@color/white"
-        tools:ignore="MissingConstraints"></EditText>
+        tools:ignore="MissingConstraints"
 
-    <EditText
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Login_email"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:ems="15"
+            android:inputType="textEmailAddress"
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/contra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/Edidtextecorroadmin"
+        android:layout_below="@id/pedro"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="8dp"
         android:backgroundTint="#FFFFFF"
@@ -55,7 +65,16 @@
         android:inputType="textPassword"
         android:textColor="#F3EFEF"
         android:textColorHint="#F1EBEB"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+       >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ramiro"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:ems="15"
+            android:inputType="textPassword"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
 
 
     <Button

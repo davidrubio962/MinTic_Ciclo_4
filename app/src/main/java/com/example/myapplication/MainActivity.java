@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         siguiente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent siguiente = new Intent(MainActivity.this, MenuActivity4.class);
+                Intent siguiente = new Intent(MainActivity.this, MainActivity2.class);
                 startActivity(siguiente);
             }
         });

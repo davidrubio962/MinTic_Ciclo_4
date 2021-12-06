@@ -1,9 +1,11 @@
 package com.example.myapplication;
 
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -19,6 +21,7 @@ public class MainActivity2 extends AppCompatActivity {
     FirebaseAnalytics analytics;
     FirebaseAuth auth;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +29,8 @@ public class MainActivity2 extends AppCompatActivity {
         init();
         setup();
         events();
+
+
     }
 
     private void setup() {
